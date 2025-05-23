@@ -82,7 +82,7 @@ matplotlib
 
 To execute the entire workflow from data cleaning to model evaluation:
 
-python main.py
+python modeling.py
 
 ---
 
