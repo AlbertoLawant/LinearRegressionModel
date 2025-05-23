@@ -3,6 +3,7 @@ import numpy as np
 from sklearn.experimental import enable_iterative_imputer  
 from sklearn.impute import IterativeImputer, SimpleImputer
 from sklearn.compose import ColumnTransformer
+
 import warnings
 warnings.filterwarnings('ignore')
 
@@ -25,7 +26,6 @@ df_imputed = preprocessor.fit_transform(df)
 
 df_imputed = pd.DataFrame(df_imputed, columns=num_cols.tolist() + cat_cols.tolist())
 
-# Safely convert columns to int after filling NaNs
 df['Year_Introduced'] = pd.to_numeric(df['Year_Introduced']).fillna(df['Year_Introduced'].median()).astype(int)
 df['Latitude'] = pd.to_numeric(df['Latitude'])
 df['Longitude'] = pd.to_numeric(df['Longitude'])
