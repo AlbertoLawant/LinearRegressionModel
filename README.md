@@ -70,12 +70,13 @@ Use `pip` to install the required Python packages:
 
 pip install -r requirements.txt
 
+```
 pandas>=1.3.0
 numpy>=1.21.0
 scikit-learn>=1.0
 jupyter
 matplotlib
-
+````
 
 ### 🚀 4. Run the Full Pipeline (Optional)
 
