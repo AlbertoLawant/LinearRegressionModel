@@ -38,7 +38,6 @@ Popularity = (Speed_mph * 0.4 + Height_ft * 0.3 + Inversions * 0.2 + Gforce * 0.
 
 Follow these steps to run the full machine learning pipeline or interact with the project through Jupyter Notebooks.
 
----
 
 ### 🔁 1. Clone the Repository
 
@@ -69,8 +68,14 @@ To proceed:
 
 Use `pip` to install the required Python packages:
 
-
 pip install -r requirements.txt
+
+pandas>=1.3.0
+numpy>=1.21.0
+scikit-learn>=1.0
+jupyter
+matplotlib
+
 
 ### 🚀 4. Run the Full Pipeline (Optional)
 
