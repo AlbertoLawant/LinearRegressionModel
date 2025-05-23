@@ -21,33 +21,6 @@ While real popularity data isn't available, we simulate it using a weighted form
 
 ---
 
-
-## 🗂️ Project Structure
-
-rollercoaster-regression/
-├── data/
-│ ├── coaster_db.csv # Raw dataset
-│ ├── cleaned_coaster_data.csv # Cleaned dataset (optional)
-│ └── featured_coaster_data.csv # Post-feature-engineering dataset (optional)
-│
-├── notebooks/
-│ ├── cleaning.ipynb # Data cleaning notebook
-│ ├── feature_engineering.ipynb # Imputation and type conversion
-│ ├── modeling.ipynb # Regression modeling & evaluation
-│ └── Modeling.png # Pipeline diagram screenshot
-│
-├── src/
-│ ├── cleaning.py # Python version of cleaning.ipynb
-│ ├── feature_engineering.py # Python version of feature_engineering.ipynb
-│ └── modeling.py # Python version of modeling.ipynb
-│
-├── .gitignore
-├── LICENSE
-├── README.md
-
-
----
-
 ## 🔍 Features and Target
 
 ### 📥 Input Features
@@ -57,13 +30,7 @@ rollercoaster-regression/
 ### 🎯 Target Variable
 A synthetic "popularity" score is calculated as:
 
-```python
-Popularity = (
-    Speed_mph * 0.4 +
-    Height_ft * 0.3 +
-    Inversions * 0.2 +
-    Gforce * 0.1
-)
+Popularity = (Speed_mph * 0.4 + Height_ft * 0.3 + Inversions * 0.2 + Gforce * 0.1)
 
 ---
 
@@ -77,7 +44,7 @@ Follow these steps to run the full machine learning pipeline or interact with th
 
 Start by cloning the repo to your local machine:
 
-```bash
+
 git clone https://github.com/yourusername/rollercoaster-regression.git
 cd rollercoaster-regression
 
@@ -99,16 +66,14 @@ To proceed:
 
 Use `pip` to install the required Python packages:
 
-```bash
+
 pip install -r requirements.txt
 
 ### 🚀 4. Run the Full Pipeline (Optional)
 
 To execute the entire workflow from data cleaning to model evaluation:
 
-```bash
 python main.py
-
 
 ---
 
