@@ -45,8 +45,8 @@ Follow these steps to run the full machine learning pipeline or interact with th
 Start by cloning the repo to your local machine:
 
 
-git clone git@github.com:AlbertoLawant/LinearRegressionModel.git
-cd LinearRegressionModel
+ ```git clone git@github.com:AlbertoLawant/LinearRegressionModel.git
+cd LinearRegressionModel```
 
 ---
 
